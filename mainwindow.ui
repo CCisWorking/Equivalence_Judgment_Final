@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="JudgeBtn">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>112</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+    </property>
+    <property name="text">
+     <string>Judge</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseBtn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>440</y>
+      <width>112</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CompareBtn">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+    </property>
+    <property name="text">
+     <string>Human Compare</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ShowResult">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>70</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+    </property>
+    <property name="text">
+     <string>Show Result</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HumanResult">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>120</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 12px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+    </property>
+    <property name="text">
+     <string>Show Human Result</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
