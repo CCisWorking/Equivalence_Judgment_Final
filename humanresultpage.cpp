@@ -1,25 +1,27 @@
-#include "resultpage.h"
-#include "ui_resultpage.h"
+#include "humanresultpage.h"
+#include "ui_humanresultpage.h"
 
-ResultPage::ResultPage(QWidget *parent) :
+HumanResultPage::HumanResultPage(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::ResultPage)
+    ui(new Ui::HumanResultPage)
 {
     ui->setupUi(this);
-//    QString fileName = QFileDialog::getOpenFileName(this, QString::fromLocal8Bit("打开文件"),
-//            "", tr("file(*.csv)"));
     ui->eq->setColumnCount(2);
     ui->eq->setRowCount(100);
     this->show_re(1);
     this->show_re(2);
 }
 
-void ResultPage::show_re(int path){
-    std::cerr<<"path:"<<path;
+HumanResultPage::~HumanResultPage()
+{
+    delete ui;
+}
+
+void HumanResultPage::show_re(int path){
     ui->neq->setColumnCount(2);
     ui->neq->setRowCount(100);
-    QString p2("/Users/cc/Desktop/inequal.csv");
-    QString p1("/Users/cc/Desktop/equal.csv");
+    QString p1("/Users/cc/Desktop/human_equal.csv");
+    QString p2("/Users/cc/Desktop/human_inequal.csv");
     QFile file;
     if(path==1) file.setFileName(p1);
     else file.setFileName(p2);
@@ -55,15 +57,9 @@ void ResultPage::show_re(int path){
         ui->neq->resizeColumnToContents(10);
         ui->neq->update();
     }
-
 }
 
-ResultPage::~ResultPage()
-{
-    delete ui;
-}
-
-void ResultPage::on_CloseBtn_clicked()
+void HumanResultPage::on_CloseBtn_clicked()
 {
     this->close();
 }

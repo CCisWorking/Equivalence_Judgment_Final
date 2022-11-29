@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ResultPage</class>
- <widget class="QWidget" name="ResultPage">
+ <class>HumanResultPage</class>
+ <widget class="QWidget" name="HumanResultPage">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,6 +13,30 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QTableWidget" name="eq">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>611</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#838B8B; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FF34B3; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 9px; /*字体*/
+    font-family: Segoe UI;
+    min-width:20px;/*控件最小宽度*/
+    min-height:15px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="CloseBtn">
    <property name="geometry">
     <rect>
@@ -70,28 +94,34 @@ QPushButton:pressed
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="eq">
+  <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>50</y>
-     <width>611</width>
-     <height>141</height>
+     <x>10</x>
+     <y>20</y>
+     <width>141</width>
+     <height>27</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color:#838B8B; /*文字颜色*/
     background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
-    border-style:outset; /*边框风格*/
+    border-style:solid; /*边框风格*/
     border-width:2px;/*边框宽度*/
     border-color:#FF34B3; /*边框颜色*/
     border-radius:10px; /*边框倒角*/
-    font:bold 9px; /*字体*/
+    font:bold 12px; /*字体*/
     font-family: Segoe UI;
     min-width:20px;/*控件最小宽度*/
     min-height:15px;/*控件最小高度*/
     padding:4px;/*内边距*/
 </string>
+   </property>
+   <property name="text">
+    <string>human_equal.csv</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QTableWidget" name="neq">
@@ -123,7 +153,7 @@ QPushButton:pressed
     <rect>
      <x>10</x>
      <y>223</y>
-     <width>91</width>
+     <width>141</width>
      <height>29</height>
     </rect>
    </property>
@@ -142,37 +172,7 @@ QPushButton:pressed
 </string>
    </property>
    <property name="text">
-    <string>inequal.csv</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>91</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:#838B8B; /*文字颜色*/
-    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
-    border-style:solid; /*边框风格*/
-    border-width:2px;/*边框宽度*/
-    border-color:#FF34B3; /*边框颜色*/
-    border-radius:10px; /*边框倒角*/
-    font:bold 12px; /*字体*/
-    font-family: Segoe UI;
-    min-width:20px;/*控件最小宽度*/
-    min-height:15px;/*控件最小高度*/
-    padding:4px;/*内边距*/
-</string>
-   </property>
-   <property name="text">
-    <string>equal.csv</string>
+    <string>human_inequal.csv</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
