@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultPage</class>
+ <widget class="QWidget" name="ResultPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="CloseBtn">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>440</y>
+     <width>112</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #aa55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #1296db);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #ff55ff, stop: 1 #aa00ff);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0055ff; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 14px; /*字体*/
+    font-family: Segoe UI;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="eq">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>611</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#838B8B; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FF34B3; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 9px; /*字体*/
+    font-family: Segoe UI;
+    min-width:20px;/*控件最小宽度*/
+    min-height:15px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="neq">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>611</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#838B8B; /*文字颜色*/
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#0000FF; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 9px; /*字体*/
+    font-family: Segoe UI;
+    min-width:20px;/*控件最小宽度*/
+    min-height:15px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>223</y>
+     <width>91</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#838B8B; /*文字颜色*/
+    background-color: #F0FFFF;
+    border-style:solid; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#4876FF; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 12px; /*字体*/
+    font-family: Segoe UI;
+    min-width:30px;/*控件最小宽度*/
+    min-height:15px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+</string>
+   </property>
+   <property name="text">
+    <string>inequal.csv</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#838B8B; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #E6E6FA, stop: 1 #F0FFFF);
+    border-style:solid; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FF34B3; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 12px; /*字体*/
+    font-family: Segoe UI;
+    min-width:20px;/*控件最小宽度*/
+    min-height:15px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+</string>
+   </property>
+   <property name="text">
+    <string>equal.csv</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
